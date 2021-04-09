@@ -1,0 +1,323 @@
+/* Globol Style */
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+  html{
+      font-size:62.5%;
+  }
+  
+  h1{
+      font-size: 2.6rem;
+  }
+  
+  li,
+  button,
+  label,
+  input,
+  p {
+      font-size: 2rem;
+  }
+  
+  h2{
+      font-size: 8rem;
+      text-shadow: black;
+  }
+  
+  h3 {
+      font-size: 3rem;
+      font-weight: normal;
+  }
+  
+  h4,
+  h5 {
+      font-size: 2.8rem;
+  }
+  
+  a{
+      color:white;
+      text-decoration: none;
+  }
+
+  .a1 {
+  
+    list-style:none;
+    padding-left:25px;
+    background: url(./icons/twitter\ 1.svg)
+  }
+
+.a2 {
+ 
+    list-style:none;
+    padding-left:20.8px;
+    background: url(./icons/instagram\ 1.svg)
+}
+
+.a3 {
+
+    list-style:none;
+    padding-left:27px;
+    background: url(./icons/youtube-symbol\ 1.svg)
+}
+  
+  button{
+      padding: 2rem 6rem;
+      background: #4c6e97;
+      border: none;
+      color:white;
+      font-size: 1.8rem;
+      cursor: pointer;
+      transition: background 0.5s ease-in-out;
+  }
+  
+  button:hover{
+      background:#27394e;
+  }
+  
+  body{
+      font-family:'Poppins', sans-serif;
+  } 
+ 
+  /* Nav Section with HERO */
+
+  .main-head{
+      background: #131c27;
+      color: white;
+      position: sticky;
+      top: 0px;
+      z-index: 3;
+  }
+  
+  
+  nav{
+      display: flex;
+      padding: 2rem;
+      min-height: 10vh;
+      width: 90%;
+      margin:auto;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  
+  nav ul{
+      display: flex;
+      flex: 1 1 40rem;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+  }
+
+  li {
+    cursor: pointer;
+  }
+
+  li:hover {
+    cursor: pointer;
+    color: teal;
+  }
+   
+   .logo {
+      flex: 2 1 40rem;
+      font-family: 'Pattaya', sans-serif;
+      font-weight: 400; 
+  } 
+  
+   .hero{
+      min-height: 90vh;
+      background: linear-gradient(rgb(0,0,0, 0), transparent),url(./img/cachapa_1.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color:white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+
+  .grid{
+    min-height: 90vh;
+    background: linear-gradient(rgb(0,0,0, 0), transparent);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+}
+
+.cell {
+   
+    border: 1px solid black;
+    width: calc(100vw / 2 - 32rem);
+    height: 50vh;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    box-shadow: black;
+    border: 4px solid white;
+    box-shadow: 0 0 10px 10px rgba(37, 16, 41, 0.7);
+}
+
+.cachapa1{
+background: url(./img/cachapa_1.jpeg);
+background-size: 100% 100%;
+}
+
+.cachapa2{
+background: url(./img/cachapa_2.jpeg);
+background-size: 100% 100%;
+}
+
+.cachapa3{
+background: url(./img/cachapa_3.jpeg);
+background-size: 100% 100%;
+}
+
+.cachapa4{
+background: url(./img/cachapa_4.jpeg);
+background-size: 100% 100%;
+}
+
+.cachapa5{
+background: url(./img/cachapa_5.jpeg);
+background-size: 100% 100%;
+}
+
+.cachapa6{
+background: url(./img/cachapa_6.jpeg);
+background-size: 100% 100%;
+}
+
+.plato {
+    height: 20%;
+    width: 100%;
+    background:#27394e; 
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+img {
+    width: 100%;
+    height: 87%;
+}
+  
+  .hero h3{
+  
+      padding: 5rem;
+  }
+
+  .cachapa {
+      color: yellow;
+  }
+
+  .la {
+      color: red
+  }
+
+  .verdadera {
+      color: blue;
+  } 
+
+  /* Contact */
+  .formsection {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    color: white;
+}
+
+    form {
+     padding: 3rem 10rem;
+     display:flex;
+     flex-direction:column;
+     justify-content: center;
+     align-items: center;
+     border-radius: 2rem;
+     margin: 2rem 0;
+     min-width: 300px;
+    background: #154353
+    }
+  
+      input {
+        margin: 2rem;
+      }
+
+      input:focus {
+          outline: 2px solid black;
+        }
+    
+      .textarea {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2rem;
+        margin: 2rem;
+        height: 20rem;
+      } 
+
+      .textarea:focus {
+        outline: 2px solid black;
+      }
+/* 
+       button {
+        width: 100%;
+        padding: 2rem;
+        color: black;
+      }
+        button:focus {
+          background: rgb(51, 105, 107);
+          color: white;
+        } 
+     */
+  
+/*Footer*/
+ footer {
+    background: #154353;
+    color: white;
+    min-width: 300px;
+    min-height: 10vh;
+    padding: 0% 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+    
+    ul {
+      flex: 1 1 40rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+      list-style:none;
+    }
+    
+    h4 {
+      flex: 1 1 40rem;
+    } 
+
+    /* test */
+
+   /*  .test{
+        background-color: teal;
+        height: 50rem;
+
+    } */
