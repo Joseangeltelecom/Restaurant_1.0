@@ -5,11 +5,100 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
-  <title>My restaurant</title>
+  <title>My Todo List</title>
 </head>
-<body>
-  <div id="content"></div>
-  <script src="./restaurant.js" ></script>
+<body >
+<nav>
+    <h1>Todo List</h1>
+</nav>
+
+<div class="container">
+
+<div class="projects">
+  <h2>Projects</h2>
+
+  <!-- Button Add new project -->
+  <div class="project-button">
+    <div class="add-icon"></div>
+    <h3>Add Projects</h3>
+  </div>
+  
+  
+  <div class="container-projects">
+  </div>
+
+  <!-- Input New Project PopUp -->
+   <form class="input-project">
+    <input class="input-add-project-popup" id="newProject" type="text" required maxlength= "22" >
+
+    <div class="div-button">
+      <button type ="submit" class="button-add-project-popup">add</button>
+      <button class="button-cancel-project-popup">cancel</button>
+    </div>
+  </form> 
+</div>
+
+<main class="task">
+
+  <div class="add-task-button">
+    <div class="add-icon"></div>
+    <h3>Add Task</h3>
+  </div>
+
+  <div class="container-task">
+     <!-- <div class="new-task-added">
+    <input type="checkbox">
+    <p class="new-task-text">New Task 1</p>
+    <input type="date" name="task-date" id="task-date" />
+            <select name="task-priority" id="task-priority">
+              <option value="high">High</option>
+              <option value="medium">Medium</option>
+              <option value="low">Low</option>
+            </select>
+    <div class="icon-edit"></div>
+    <div class="icon-cancel"></div>
+  </div>  -->
+  </div>
+
+  <form class="input-task-container">
+    <div class="input-new-task">  
+    <input type="checkbox" id="checkTask" >
+    <input required class="input-add-task-popup" id="textTask" type="text" placeholder= "Title: Laundry" maxlength= "50">
+    <div required  class="container-date-priority"> 
+      <input required  type="date" name="task-date" id="task-date-popup" />
+      <select required   name="task-priority" id="task-priority-popup">
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select> 
+    </div> 
+
+  </div>
+    
+    <div class="div-button-task">
+      <button type ="submit"  class="button-add-task-popup">Add</button>
+      <button type ="submit"  class="button-edit-task-popup">confirm edit</button>
+      <button class="button-cancel-task-popup">Cancel</button>
+
+    </div>
+
+  </form> 
+
+</main>
+</div>
+
+<div class="overlay active" id="overlay"> <!-- vamos a estar  quitanod y poniendo la clase active con JavaScript--->
+<div class="popup active"  id="popup">
+  
+      
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <script src="./todoList.js" ></script>
 </body>
 </html>
 
